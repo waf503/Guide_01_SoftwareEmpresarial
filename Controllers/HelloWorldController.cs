@@ -15,9 +15,12 @@ namespace MvcPelicula.Controllers
             return View();
         }
 
-        public string Welcome(string nombre, int ID = 1)
+        public ActionResult Welcome(string nombre, int numVeces = 1)
         {
-            return HttpUtility.HtmlEncode("Hola "+nombre+", ID: "+ ID);
+            ViewBag.Mensaje = "Hola " + nombre;
+            ViewBag.NumVeces = numVeces;
+
+            return View();
         }
     }
 }
