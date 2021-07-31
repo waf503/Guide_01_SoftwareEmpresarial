@@ -5,9 +5,9 @@
 
 <h2>Bienvenido</h2>
 <ul>
-    @for(int i = 0; i < ViewBag.NumVeces; i++)
+    @for(int i = 1; i <=ViewBag.NumVeces; i++)
             {
-                <li>@ViewBag.Mensaje</li>
+                <li>@ViewBag.Mensaje, veces mostrado = @i</li>
             }
 </ul>
 

@@ -21,7 +21,7 @@ namespace MvcPelicula
 
             routes.MapRoute(
                     name: "Hola",
-                    url:"{controller}/{action}/{nombre}/{id}"
+                    url:"{controller}/{action}/{nombre}/{apellido}/{numVeces}"
                 );
         }
     }

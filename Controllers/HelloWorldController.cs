@@ -15,9 +15,9 @@ namespace MvcPelicula.Controllers
             return View();
         }
 
-        public ActionResult Welcome(string nombre, int numVeces = 1)
+        public ActionResult Welcome(string nombre, string apellido, int numVeces = 1)
         {
-            ViewBag.Mensaje = "Hola " + nombre;
+            ViewBag.Mensaje = "Hola " + nombre + " "+apellido;
             ViewBag.NumVeces = numVeces;
 
             return View();
