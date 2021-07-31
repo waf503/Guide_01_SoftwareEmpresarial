@@ -9,10 +9,10 @@ namespace MvcPelicula.Controllers
     public class HelloWorldController : Controller
     {
         // GET: HelloWorld
-        public String Index()
+        public ActionResult Index()
         {
-            return "<h1>Esta es mi accion <b> predeterminada </b> ...</h1>";
-            //return View();
+            //return "<h1>Esta es mi accion <b> predeterminada </b> ...</h1>";
+            return View();
         }
 
         public string Welcome(string nombre, int ID = 1)
